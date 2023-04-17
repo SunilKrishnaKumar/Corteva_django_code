@@ -12,6 +12,7 @@ logging.basicConfig(filename='project/logs/log_info.txt',
 
 logger = logging.getLogger("mylogger")
 
+
 def WeatherUpdate(data_dir, cursor):
     logger.info('Updating Weather Data DB')
     row_count = 0
@@ -37,8 +38,6 @@ def WeatherUpdate(data_dir, cursor):
     
 
 def WeatherStatsUpdate(cursor):
-    
-    
     logger.info('Updating Weather Data DB')
     row_count = cursor.execute(f"""SELECT COUNT(*) FROM weatherData_weatherstats;""").fetchall()[0][0]
     if row_count == 0: ##TODO
