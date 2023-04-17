@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'weatherData',
-    'rest_framework'
+    'rest_framework',
+    'rest_framework_swagger'
 ]
 
 MIDDLEWARE = [
@@ -56,7 +57,7 @@ ROOT_URLCONF = 'project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['/Users/sunil/Documents/Corteva/project/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

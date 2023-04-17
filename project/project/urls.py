@@ -16,11 +16,22 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include, re_path
-# from django.conf.urls import url
-from weatherData import views
+from rest_framework.schemas import get_schema_view
+from django.views.generic import TemplateView
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     # re_path("weather/stats", views.WeatherStatsViewSet.as_view())
-    path('', include('weatherData.urls') )
+    path('', include('weatherData.urls') ),
+    path('api_schema/', get_schema_view(
+        title='API Schema',
+        description='Guide to the Rest API'
+        ), name='api_schema'
+    ),
+    path('docs/', TemplateView.as_view(
+        template_name='docs.html',
+        extra_context={'schema_url':'api_schema'}
+        ), name='swagger-ui',
+    )
 ]
