@@ -1,6 +1,7 @@
 from django.db import models
 
 # Create your models here.
+## I created Weather class. This creates equivalent SQL commands through DJANGO ORM
 
 class Weather(models.Model):
     station_id = models.CharField(max_length=255)
@@ -8,6 +9,8 @@ class Weather(models.Model):
     max_temp = models.IntegerField(null=True)
     min_temp = models.IntegerField(null=True)
     precipitation = models.IntegerField(null=True)
+    
+## I created WeatherStats class. This creates equivalent SQL commands through DJANGO ORM
     
 class WeatherStats(models.Model):
     station_id = models.CharField(max_length=255)

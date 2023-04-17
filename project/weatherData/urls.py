@@ -11,6 +11,9 @@ router = routers.DefaultRouter()
 
 ## Define router paths and viewset to be used
 
+## Here I registered my API paths. I handle filter paths in the views. 
+## I used Default Router of Django framework for REST architecture
+
 router.register(r'api/weather', WeatherViewSet, basename='weather-data')
 router.register(r'api/weather/stats', WeatherStatsViewSet, basename='weather-stats')
 

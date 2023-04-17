@@ -19,6 +19,8 @@ from django.urls import path, include, re_path
 from rest_framework.schemas import get_schema_view
 from django.views.generic import TemplateView
 
+## Added URL for api_schema
+## Added URL for SWAGGER_UI
 
 urlpatterns = [
     path('admin/', admin.site.urls),
