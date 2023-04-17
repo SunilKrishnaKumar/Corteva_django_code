@@ -15,9 +15,12 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, re_path
+# from django.conf.urls import url
+from weatherData import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/weather/', include('weatherData.urls'))
+    # re_path("weather/stats", views.WeatherStatsViewSet.as_view())
+    path('', include('weatherData.urls') )
 ]

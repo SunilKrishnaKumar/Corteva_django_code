@@ -1,0 +1,519 @@
+05:36:44,671 django.request WARNING Not Found: /api/weather/stats/
+05:37:26,531 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/views.py changed, reloading.
+05:37:32,382 django.request WARNING Not Found: /api/weather/stats/
+05:38:01,629 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/views.py changed, reloading.
+05:38:06,329 django.request WARNING Not Found: /api/weather/stats/
+05:39:40,150 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/views.py changed, reloading.
+05:39:40,446 mylogger INFO queryset
+05:39:44,561 django.request WARNING Not Found: /api/weather/stats/
+05:42:01,201 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/views.py changed, reloading.
+05:44:56,711 mylogger INFO queryset is [1, 2, 3]
+05:45:03,805 django.request WARNING Not Found: /api/weather/stats/
+05:47:23,694 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/serializers.py changed, reloading.
+05:47:23,993 mylogger INFO queryset is [1, 2, 3]
+05:47:30,808 django.request WARNING Not Found: /api/weather/stats/
+05:47:33,159 django.request WARNING Not Found: /api/weather/stats/
+05:56:56,43 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/urls.py changed, reloading.
+05:56:56,360 mylogger INFO queryset is [1, 2, 3]
+05:57:02,604 django.request WARNING Not Found: /api/weather/stats/
+05:57:42,471 django.request ERROR Internal Server Error: /stats/
+Traceback (most recent call last):
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/db/models/query.py", line 398, in __iter__
+    self._fetch_all()
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/db/models/query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/db/models/query.py", line 121, in __iter__
+    for row in compiler.results_iter(results):
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1498, in apply_converters
+    value = converter(value, expression, connection)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/db/backends/sqlite3/operations.py", line 342, in converter
+    return create_decimal(value).quantize(
+decimal.InvalidOperation: [<class 'decimal.InvalidOperation'>]
+05:58:23,961 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/views.py changed, reloading.
+05:58:30,661 django.request WARNING Not Found: /stats/
+05:59:00,370 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/views.py changed, reloading.
+06:00:02,910 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/urls.py changed, reloading.
+06:00:14,593 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/urls.py changed, reloading.
+06:00:55,639 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/views.py changed, reloading.
+06:01:03,318 django.request ERROR Internal Server Error: /stats/
+Traceback (most recent call last):
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/db/models/query.py", line 398, in __iter__
+    self._fetch_all()
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/db/models/query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/db/models/query.py", line 121, in __iter__
+    for row in compiler.results_iter(results):
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1498, in apply_converters
+    value = converter(value, expression, connection)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/db/backends/sqlite3/operations.py", line 342, in converter
+    return create_decimal(value).quantize(
+decimal.InvalidOperation: [<class 'decimal.InvalidOperation'>]
+06:02:58,752 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/views.py changed, reloading.
+06:16:49,15 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/views.py changed, reloading.
+06:24:18,199 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/urls.py changed, reloading.
+06:26:04,415 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/urls.py changed, reloading.
+06:26:21,608 django.request ERROR Internal Server Error: /stats/
+Traceback (most recent call last):
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/sunil/Documents/Corteva/project/weatherData/views.py", line 37, in list
+    return Response(serializer.data)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/db/models/query.py", line 398, in __iter__
+    self._fetch_all()
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/db/models/query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/db/models/query.py", line 121, in __iter__
+    for row in compiler.results_iter(results):
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1498, in apply_converters
+    value = converter(value, expression, connection)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/db/backends/sqlite3/operations.py", line 342, in converter
+    return create_decimal(value).quantize(
+decimal.InvalidOperation: [<class 'decimal.InvalidOperation'>]
+06:27:55,710 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/views.py changed, reloading.
+06:28:43,834 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/views.py changed, reloading.
+06:35:17,255 django.request WARNING Not Found: /
+06:35:26,967 django.request ERROR Internal Server Error: /weather/stats
+Traceback (most recent call last):
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/template/response.py", line 111, in render
+    self.content = self.rendered_content
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/renderers.py", line 723, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/renderers.py", line 679, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/renderers.py", line 412, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/renderers.py", line 99, in render
+    ret = json.dumps(
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/utils/encoders.py", line 47, in default
+    return tuple(obj)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/db/models/query.py", line 398, in __iter__
+    self._fetch_all()
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/db/models/query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/db/models/query.py", line 208, in __iter__
+    for row in compiler.results_iter(
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1498, in apply_converters
+    value = converter(value, expression, connection)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/db/backends/sqlite3/operations.py", line 342, in converter
+    return create_decimal(value).quantize(
+decimal.InvalidOperation: [<class 'decimal.InvalidOperation'>]
+06:38:20,197 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/models.py changed, reloading.
+06:39:06,690 django.request WARNING Not Found: /
+06:41:41,634 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/views.py changed, reloading.
+06:45:40,853 django.request WARNING Not Found: /
+06:45:54,314 django.request WARNING Not Found: /api/weather/stats/
+06:45:56,818 django.request WARNING Not Found: /api/weather/stats/
+06:46:07,33 django.request WARNING Not Found: /api/weather/stats/
+06:46:07,759 django.request WARNING Not Found: /api/weather/
+06:46:09,610 django.request WARNING Not Found: /api/weather/
+06:46:19,25 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/project/urls.py changed, reloading.
+06:46:26,544 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/urls.py changed, reloading.
+06:46:29,858 django.request WARNING Not Found: /api/weather/
+06:46:41,214 django.request ERROR Internal Server Error: /stats/
+Traceback (most recent call last):
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/relations.py", line 401, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/relations.py", line 339, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'weatherstats-detail' not found. 'weatherstats-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/relations.py", line 416, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "weatherstats-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+06:46:46,923 django.request ERROR Internal Server Error: /weather/
+Traceback (most recent call last):
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/relations.py", line 401, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/relations.py", line 339, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'weather-detail' not found. 'weather-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/relations.py", line 416, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "weather-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+06:47:57,247 django.request ERROR Internal Server Error: /stats/
+Traceback (most recent call last):
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/relations.py", line 401, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/relations.py", line 339, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'weatherstats-detail' not found. 'weatherstats-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/relations.py", line 416, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "weatherstats-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+07:00:31,113 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/urls.py changed, reloading.
+07:00:43,770 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/urls.py changed, reloading.
+07:00:56,438 django.request ERROR Internal Server Error: /stats/
+Traceback (most recent call last):
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/relations.py", line 401, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/relations.py", line 339, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'weatherstats-detail' not found. 'weatherstats-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/relations.py", line 416, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "weatherstats-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+07:02:47,867 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/views.py changed, reloading.
+07:03:04,530 django.request ERROR Internal Server Error: /stats/
+Traceback (most recent call last):
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/relations.py", line 401, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/relations.py", line 339, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'weatherstats-detail' not found. 'weatherstats-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/relations.py", line 416, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "weatherstats-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+07:03:18,103 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/views.py changed, reloading.
+07:03:22,117 django.request ERROR Internal Server Error: /stats/
+Traceback (most recent call last):
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/sunil/Documents/Corteva/project/weatherData/views.py", line 31, in list
+    return Response(serializer.data)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/relations.py", line 378, in to_representation
+    assert 'request' in self.context, (
+AssertionError: `HyperlinkedIdentityField` requires the request in the serializer context. Add `context={'request': request}` when instantiating the serializer.
+07:05:02,299 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/serializers.py changed, reloading.
+07:07:39,697 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/views.py changed, reloading.
+07:15:54,251 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/views.py changed, reloading.
+07:16:42,1 django.request ERROR Internal Server Error: /weather/
+Traceback (most recent call last):
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/django/template/response.py", line 111, in render
+    self.content = self.rendered_content
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/renderers.py", line 723, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/renderers.py", line 654, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/renderers.py", line 553, in get_raw_data_form
+    serializer = view.get_serializer()
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/generics.py", line 108, in get_serializer
+    serializer_class = self.get_serializer_class()
+  File "/Users/sunil/miniconda3/envs/django/lib/python3.9/site-packages/rest_framework/generics.py", line 122, in get_serializer_class
+    assert self.serializer_class is not None, (
+AssertionError: 'WeatherViewSet' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+07:17:30,914 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/views.py changed, reloading.
+07:20:47,864 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/views.py changed, reloading.
+07:22:06,58 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/views.py changed, reloading.
+07:22:12,92 mylogger INFO page is <class 'NoneType'>
+07:22:16,27 mylogger INFO page is <class 'NoneType'>
+07:26:10,998 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/views.py changed, reloading.
+07:26:18,297 mylogger INFO page is <class 'list'>
+07:26:33,976 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/views.py changed, reloading.
+07:26:38,722 mylogger INFO page is <class 'list'>
+07:26:48,235 django.request WARNING Not Found: /stats/1
+07:28:57,988 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/views.py changed, reloading.
+07:32:21,619 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/views.py changed, reloading.
+07:32:29,161 mylogger INFO page is <class 'list'>
+07:32:52,766 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/views.py changed, reloading.
+07:34:05,947 django.utils.autoreload INFO /Users/sunil/Documents/Corteva/project/weatherData/urls.py changed, reloading.

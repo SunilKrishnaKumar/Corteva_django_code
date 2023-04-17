@@ -11,6 +11,6 @@ class Weather(models.Model):
     
 class WeatherStats(models.Model):
     station_id = models.CharField(max_length=255)
-    avg_max_temp = models.DecimalField(max_digits=3, decimal_places= 2, null=True)
-    avg_min_temp = models.DecimalField(max_digits=3, decimal_places= 2, null=True)
-    total_precipitation = models.DecimalField(max_digits=6, decimal_places= 2, null=True)
+    avg_max_temp = models.DecimalField(max_digits=6, decimal_places= 3, null=True)
+    avg_min_temp = models.DecimalField(max_digits=6, decimal_places= 3, null=True)
+    total_precipitation = models.DecimalField(max_digits=10, decimal_places= 3, null=True)
