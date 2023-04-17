@@ -4,7 +4,8 @@ import pandas as pd
 import numpy as np
 import logging
 
-logging.basicConfig(filename='project/logs/log_info.txt',
+## This logger logs number of entries after running the script. 
+logging.basicConfig(filename='/Users/sunil/Documents/Corteva/project/logs/log_info.txt',
                     filemode='a',
                     format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
                     datefmt='%H:%M:%S',
@@ -30,6 +31,7 @@ def WeatherUpdate(data_dir, cursor):
         listOfEntries = cursor.execute(f"""SELECT * FROM weatherData_weather WHERE station_id == '{filename.split('.')[0]}';""").fetchall()
         row_count += cursor.rowcount
         if len(listOfEntries) > 0:
+            logger.info(f"{filename} already present in DB. Continuing without adding")
             continue
         else:
             df.to_sql('weatherData_weather', connection, if_exists='append',index=False)
@@ -39,6 +41,7 @@ def WeatherUpdate(data_dir, cursor):
 
 def WeatherStatsUpdate(cursor):
     logger.info('Updating Weather Data DB')
+    cursor.execute("""DELETE FROM weatherData_weatherstats;""")
     row_count = cursor.execute(f"""SELECT COUNT(*) FROM weatherData_weatherstats;""").fetchall()[0][0]
     if row_count == 0: ##TODO
         cursor.execute(f"""INSERT INTO weatherData_weatherstats 
@@ -51,20 +54,18 @@ def WeatherStatsUpdate(cursor):
                    sum(precipitation)/100 as total_precipitation 
                    from weatherData_weather GROUP by station_id;""")
     cursor.execute("""DELETE FROM weatherData_weatherstats
-                        WHERE station_id = 'trial';""")
+                        WHERE station_id = 'TRIAL';""")
     row_count = cursor.execute(f"""SELECT COUNT(*) FROM weatherData_weatherstats;""").fetchall()[0][0]
     logger.info(f"Number of entries added : {row_count}") ### TODO: time logging
     
     
-    
-
 
 if __name__ == "__main__":
     data_dir = '/Users/sunil/Documents/Corteva/project/wx_data'
     connection = sqlite3.connect('/Users/sunil/Documents/Corteva/project/db.sqlite3')
     cursor = connection.cursor()
-    # WeatherUpdate(data_dir, cursor)
-    WeatherStatsUpdate(cursor)
+    WeatherUpdate(data_dir, cursor)
+    # WeatherStatsUpdate(cursor)
     connection.commit()
     connection.close()
     
