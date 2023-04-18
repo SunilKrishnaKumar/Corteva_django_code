@@ -24,7 +24,6 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # re_path("weather/stats", views.WeatherStatsViewSet.as_view())
     path('', include('weatherData.urls') ),
     path('api_schema/', get_schema_view(
         title='API Schema',

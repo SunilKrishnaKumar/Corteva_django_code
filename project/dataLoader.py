@@ -4,8 +4,12 @@ import pandas as pd
 import numpy as np
 import logging
 
+from project.settings import BASE_DIR
+
+# print(BASE_DIR)
+
 ## This logger logs number of entries after running the script. 
-logging.basicConfig(filename='/Users/sunil/Documents/Corteva/project/logs/log_info.txt',
+logging.basicConfig(filename=os.path.join(BASE_DIR,'logs/log_info.txt'),
                     filemode='a',
                     format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
                     datefmt='%H:%M:%S',
@@ -61,9 +65,14 @@ def WeatherStatsUpdate(cursor):
     
 
 if __name__ == "__main__":
-    data_dir = '/Users/sunil/Documents/Corteva/project/wx_data'
-    connection = sqlite3.connect('/Users/sunil/Documents/Corteva/project/db.sqlite3')
+    data_dir = os.path.join(BASE_DIR,'wx_data')
+    print(data_dir, BASE_DIR)
+    connection = sqlite3.connect(os.path.join(BASE_DIR,'db.sqlite3'))
     cursor = connection.cursor()
+    ## Uncomment WeatherStatsUpdate to Update weatherData_weatherStats DB
+    
+    ## WeatherUpdate Function updates weatherData_weather DB
+    
     WeatherUpdate(data_dir, cursor)
     # WeatherStatsUpdate(cursor)
     connection.commit()

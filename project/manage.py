@@ -3,6 +3,9 @@
 import os
 import sys
 
+### To run server, run from project directory as python manage.py runserver
+### To setup DB, run from project directory as python manage.py makemigrations
+### To migrate, run from project directory as python manage.py migrate
 
 def main():
     """Run administrative tasks."""

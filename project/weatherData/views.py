@@ -1,4 +1,5 @@
 ## Import Django Rest Framework Viewsets. Here I will use Viewsets
+import os
 from rest_framework import viewsets
 from rest_framework.response import Response
 from rest_framework.decorators import action
@@ -6,12 +7,14 @@ from rest_framework.decorators import action
 from rest_framework.pagination import PageNumberPagination
 import logging
 
+from project.settings import BASE_DIR
+
 ## Import Serializers defined. This converts data to JSON
 from .serializers import WeatherSerializer, WeatherStatsSerializer
 from .models import Weather, WeatherStats
 
 ## Using logger to logs info for the API
-logging.basicConfig(filename='project/logs/log_process.txt',
+logging.basicConfig(filename=os.path.join(BASE_DIR,'logs/log_process.txt'),
                     filemode='a',
                     format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
                     datefmt='%H:%M:%S',
@@ -61,6 +64,9 @@ class WeatherViewSet(viewsets.ViewSet):
 
 
 class WeatherStatsViewSet(viewsets.ViewSet):
+    # filter_backends = [filters.SearchFilter]
+    # search_fields = ['station_id']
+    
 
     def list(self, request):
         
@@ -75,7 +81,8 @@ class WeatherStatsViewSet(viewsets.ViewSet):
             return Response(serializer.data)
         
         
-    @action(methods=['GET'], detail=False, url_path=r'filter/station_id=(?P<station_id>\w+)')    
+    @action(methods=['GET'], detail=False, url_path=r'filter/station_id=(?P<station_id>\w+)')
+    # @action(methods=['GET'], detail=False, url_path='')        
     def retrieve_stationID(self, request, station_id=None):
         queryset = WeatherStats.objects.filter(station_id=station_id)
         paginator = PageNumberPagination()
